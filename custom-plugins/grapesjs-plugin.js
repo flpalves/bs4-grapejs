@@ -183,4 +183,51 @@ function myPlugin(editor) {
         </table>
         `,
     });
+
+    editor.BlockManager.add('nav', {
+        attributes: { class: 'gjs-fonts gjs-f-b1' },
+        label: 'Navs',
+        category: 'Bootstrap Itens',
+        content: `
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+        `,
+    });
+
+    editor.BlockManager.add('pagination', {
+        attributes: { class: 'gjs-fonts gjs-f-b1' },
+        label: 'Pagination',
+        category: 'Bootstrap Itens',
+        content: `
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        `,
+    });
 }
